@@ -37,19 +37,19 @@ window.addEventListener('load', () => {
             }
         } 
     }
-
+    var ojsTags = 'p,h1,h2,h3,h4,h5,h6,a,li,span';
     document.querySelector('#increase-plugin-ac').addEventListener('click', e => {
-        let acessibilidade = document.querySelectorAll('p,h1, h2, h3, h4, h5, h6, a');
+        let acessibilidade = document.querySelectorAll(ojsTags);
         ControlaTamanhoElementos(acessibilidade, true);
     });
 
     document.querySelector('#normal-plugin-ac').addEventListener('click', e => {
-        let acessibilidade = document.querySelectorAll('p,h1, h2, h3, h4, h5, h6, a');
+        let acessibilidade = document.querySelectorAll(ojsTags);
         ControlaTamanhoElementos(acessibilidade, null, true);
     });
 
     document.querySelector('#decrease-plugin-ac').addEventListener('click', e => {
-        let acessibilidade = document.querySelectorAll('p,h1, h2, h3, h4, h5, h6, a');
+        let acessibilidade = document.querySelectorAll(ojsTags);
         ControlaTamanhoElementos(acessibilidade, false);
     });
 });
