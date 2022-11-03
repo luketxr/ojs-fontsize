@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
             }
         } 
     }
-    var ojsTags = 'p,h1,h2,h3,h4,h5,h6,a,li,span';
+    var ojsTags = 'p,h1,h2,h3,h4,h5,h6,a,li,span,div';
     document.querySelector('#increase-plugin-ac').addEventListener('click', e => {
         let acessibilidade = document.querySelectorAll(ojsTags);
         ControlaTamanhoElementos(acessibilidade, true);
